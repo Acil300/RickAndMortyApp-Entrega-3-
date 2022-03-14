@@ -28,7 +28,7 @@ body{
   display:relative;
 }
 .header-search input{
-  position: absolute;
+  position: relative;
   box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.322);
   background: rgba(255, 255, 255, 0.801);
   border:none;
@@ -38,17 +38,18 @@ body{
   border-bottom-left-radius: 4px;
 }
 .button-search {
-  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.322);
+  box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 32%);
   background: rgba(255, 255, 255, 0.877);
-  border:none;
+  border: none;
   height: 20px;
   border-radius: 4px;
   padding: 2px;
   font-weight: 600;
   font-size: 1rem;
-  position: absolute;
-  left: 250px;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-section-info{
   background-color: #062226;
@@ -195,6 +196,7 @@ body{
   display:grid;
   grid-template-columns: repeat(1, 1fr);
 }
+
 @media screen and (min-width: 425px) {
 .button-search{
   left: 300px;
@@ -215,7 +217,7 @@ body{
   left: 610px;
 }
 .container-section-info {
-  height: 160px;
+  height: 185px;
   margin-top: 70px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -276,6 +278,12 @@ body{
   letter-spacing: 5px;
   margin-top: 10px;
 }
+.father-grid {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 40px 0;
+}
 .container-section-info {
     height: 200px;
     margin-top: 70px;
@@ -289,5 +297,10 @@ body{
 @media screen and (min-width: 1440px) {
 .button-search{
   left: 1100px;
+}
+}
+@media screen and (min-width: 1520px) {
+.button-search{
+  left: 1500px;
 }
 }

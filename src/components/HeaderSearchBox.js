@@ -14,7 +14,7 @@ const HeaderSearchBox = ({ setRickLocation }) => {
   };
   const searchInput = () =>{
    document.getElementById('input').value='';
-   searchInput.value ='';
+  searchInput.value ='';
   }
 
   const pressKeyInput = e => {
